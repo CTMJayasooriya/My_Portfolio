@@ -1,0 +1,159 @@
+.about-section {
+  padding-top: 2rem;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+
+.about-text {
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.education-block {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-block h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.edu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.edu-item:hover {
+  transform: translateX(8px);
+}
+
+.edu-item:hover strong {
+  color: var(--accent-primary);
+}
+
+.edu-item strong {
+  color: var(--text-main);
+}
+
+.edu-item span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.module-highlight {
+  color: var(--accent-secondary) !important;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.skills-card {
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-item {
+  margin-bottom: 1.25rem;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.skill-bar-bg {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 4px;
+  transition: width 1s ease-out;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
